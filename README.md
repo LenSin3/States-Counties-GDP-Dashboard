@@ -19,13 +19,13 @@ We decided to create an interactive visualization dashboard using the key econom
 
 ### Step 1: Extract and Transform
 
-We started out by retrieveing our data from the US Bureau of Economic Activity (BEA)website through an API request.  The response  was parsed and transformed into a desirable format to be loaded in a database. The transformation involved an iterative process of data cleaning and munging.
+We started out by retrieveing data from the US Bureau of Economic Activity (BEA)website through an API request.  The response  was parsed and transformed into a desirable format to be loaded in a database. The transformation involved an iterative process of data cleaning and munging.
 A second set of data containing geolocation points of all counties in all 51 States were extracted from opendatasoft.com. These points were required to plot maps and other geolocation charts. The transformation steps were similar to the steps above mentioned.
 
 ### Step 2: Load
 
 The load is the final step in the ETL process. It is an integral part of the data acquisition and management pipeline.
-MongoDB was used as a database for storage purposes. The end structure of the datasets was taken into consideration when deciding to employ this Database Management System. The data was transformed into a JSON and then loaded into the database. Please see newload.py for more details.
+MongoDB was used as a database for storage purposes. The end structure of the dataset was taken into consideration when deciding to employ this Database Management System. The data was transformed into a JSON and then loaded into the database. Please see newload.py for more details.
 
 ### Step 3: Visualization
 
