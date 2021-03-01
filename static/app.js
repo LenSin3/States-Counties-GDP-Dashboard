@@ -1,3 +1,4 @@
+// Function to test data in json format
 function Firstdata(meta) {
     d3.json("countyGDP.json").then((data) => {
         var metadata = data.metadata;
