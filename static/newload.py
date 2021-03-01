@@ -4,7 +4,7 @@
 import json
 from pymongo import MongoClient
 
-
+# Set up mongo Client
 client = MongoClient('localhost', 27017) # Set up the client
 db = client['MainGDP_DB'] # Create database
 collection_counties = db['mainCountiesGDP'] # Create collection for counties GDP
